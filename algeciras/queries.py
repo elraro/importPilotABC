@@ -47,6 +47,7 @@ def create_data_table_completados():
            "`TiempoAccesoSistemaInspeccion` INT," \
            "`TiempoAccesoARGOS` INT," \
            "`TiempoVerificacionDocumento` INT," \
+           "`TiempoReconocimientoFacial` INT," \
            "`TiempoReconocimientoDactilar` INT," \
            "`TiempoTotalModuloAcceso` INT," \
            "`TiempoTemplateFacial` INT," \
@@ -62,8 +63,8 @@ def create_data_table_completados():
 
 
 def generate_query_completados():
-    var_string = ', '.join(["%s"] * 59)
-    query_string = "INSERT INTO `piloto_barajas`.`completados` (FechaInicio,FechaFin,Hash,Instalacion,ModuloIdentificacion,TipoDocumento,PaisEmisor,Sexo,Edad,ResultadoFinal,ResultVerificacionBiometria,ResultVerificacionFacial,ResultVerificacionDactilar,ResultVerificacionFisica,ResultVerificacionChip,ResultVerificacionMrz,ResultVerificacionDocumental,ResultVerificacionARGOSAntecedentes,ResultVerificacionARGOSObjetos,ResultVerificacionChipPa,ResultVerificacionChipAa,ResultVerificacionChipCa,ResultVerificacionChipTa,ResultVerificacionChipBac,ResultVerificacionChipRd,MensajeErrorVerificacionChip,ScoreReconocimientoFacialVivoChip,ScoreReconocimientoFacialImpresaChip,UmbralAceptacionFacial,UmbralRechazoFacial,RangoFacial,CalidadFotoCapturada,FiabilidadFotoCapturada,CalidadFotoChip,FiabilidadFotoChip,CalidadFotoImpresa,FiabilidadFotoImpresa,UmbralDactilar,RangoDactilar,ScoreMultibiometria,UmbralMultibiometria,RangoMultibiometria,NombreFuncionBiometrica,TiempoTotalIdentificacion,TiempoAccesoSistemaInspeccion,TiempoAccesoARGOS,TiempoVerificacionDocumento,TiempoReconocimientoDactilar,TiempoTotalModuloAcceso,TiempoTemplateFacial,TiempoTemplateDactilar,ScoreDactilar,TiempoDesalojarEsclusa,TiempoPermanenciaEsclusa,TiempoConsultaStatusEES,TiempoRegistroEES,TiempoObtencionBiometriaEES,TiempoVerificacionHuellaEES,CalidadH1) VALUES (%s);" % var_string
+    var_string = ', '.join(["%s"] * 60)
+    query_string = "INSERT INTO `piloto_barajas`.`completados` (FechaInicio,FechaFin,Hash,Instalacion,ModuloIdentificacion,TipoDocumento,PaisEmisor,Sexo,Edad,ResultadoFinal,ResultVerificacionBiometria,ResultVerificacionFacial,ResultVerificacionDactilar,ResultVerificacionFisica,ResultVerificacionChip,ResultVerificacionMrz,ResultVerificacionDocumental,ResultVerificacionARGOSAntecedentes,ResultVerificacionARGOSObjetos,ResultVerificacionChipPa,ResultVerificacionChipAa,ResultVerificacionChipCa,ResultVerificacionChipTa,ResultVerificacionChipBac,ResultVerificacionChipRd,MensajeErrorVerificacionChip,ScoreReconocimientoFacialVivoChip,ScoreReconocimientoFacialImpresaChip,UmbralAceptacionFacial,UmbralRechazoFacial,RangoFacial,CalidadFotoCapturada,FiabilidadFotoCapturada,CalidadFotoChip,FiabilidadFotoChip,CalidadFotoImpresa,FiabilidadFotoImpresa,UmbralDactilar,RangoDactilar,ScoreMultibiometria,UmbralMultibiometria,RangoMultibiometria,NombreFuncionBiometrica,TiempoTotalIdentificacion,TiempoAccesoSistemaInspeccion,TiempoAccesoARGOS,TiempoVerificacionDocumento,TiempoReconocimientoFacial,TiempoReconocimientoDactilar,TiempoTotalModuloAcceso,TiempoTemplateFacial,TiempoTemplateDactilar,ScoreDactilar,TiempoDesalojarEsclusa,TiempoPermanenciaEsclusa,TiempoConsultaStatusEES,TiempoRegistroEES,TiempoObtencionBiometriaEES,TiempoVerificacionHuellaEES,CalidadH1) VALUES (%s);" % var_string
     return query_string
 
 

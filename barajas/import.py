@@ -1,12 +1,13 @@
 import MySQLdb as Mdb
-import queries as queries
+
+from barajas import queries as queries
 
 # Hardcoded
 DB_HOST = "localhost"
 DB_USER = "frav"
 DB_PASS = "VXxL4UOLvB6wc01Y3Cxi"
 DB_NAME = "frav_ABC"
-FOLDER = "/home/alberto/piloto_barajas/"
+FOLDER = "/home/alberto/piloto_algeciras/"
 
 con = Mdb.connect(DB_HOST, DB_USER, DB_PASS, DB_NAME)
 cur = con.cursor()
