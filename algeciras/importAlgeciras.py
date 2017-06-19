@@ -3,11 +3,11 @@ import MySQLdb as Mdb
 from algeciras import queriesAlgeciras as queries
 
 # Hardcoded
-DB_HOST = "localhost"
-DB_USER = "frav"
-DB_PASS = "VXxL4UOLvB6wc01Y3Cxi"
-DB_NAME = "frav_ABC"
-FOLDER = "/home/alberto/piloto_algeciras/"
+DB_HOST = ""
+DB_USER = ""
+DB_PASS = ""
+DB_NAME = ""
+FOLDER = ""
 
 con = Mdb.connect(DB_HOST, DB_USER, DB_PASS, DB_NAME)
 cur = con.cursor()
